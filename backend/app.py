@@ -24,7 +24,7 @@ vectorizer = joblib.load("vectorizer.pkl")
 stop_words = set(stopwords.words("english"))
 
 # 🔑 PUT YOUR API KEY HERE
-API_KEY = "167e7404e2b14deb93c0bf95df39cc62"
+API_KEY = os.environ.get("167e7404e2b14deb93c0bf95df39cc62")
 
 # Cleaning function
 def clean_text(text):
