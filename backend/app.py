@@ -6,6 +6,10 @@ import requests
 from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import cosine_similarity
 from flask_cors import CORS
+import os
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 # Download stopwords
 nltk.download('stopwords')
 
